@@ -6,7 +6,7 @@ router.get('/', (req, res, next) => {
     req['craft'] = 'yo';
     next();
   }, (req, res, next) => {
-  res.json({data: { title: 'Home Page' }, craft: req.craft});
+  res.json({message: 'Whats going on?'});
 });
 
 module.exports = router;
